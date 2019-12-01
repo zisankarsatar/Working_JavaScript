@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    
+    <body>
+        <script>
+            function tikla(){
+                var x=0;
+                var elementler=document.getElementsByTagName("p");
+                //window.alert(elementler.length);
+                elementler[0].style.color="red"; 
+
+                for(x=1; x<elementler.length; x++){
+                    elementler[x].style.fontSize="20px";
+                }
+                var elements=document.getElementsByClassName("class1");
+                for(; elements.length; x++)
+                {
+                    elements[x].style.backgroundColor="yellow";
+                }
+                
+                
+
+            }
+        </script>
+        
+        <p>Yazılım Bilimi 1</p>
+        <p>Yazılım Bilimi 2</p>
+        <p class="class1">Yazılım Bilimi 3</p>
+        <p>Yazılım Bilimi 4</p>
+        <p class="class1">Yazılım Bilimi 5</p>
+        <p>Yazılım Bilimi 6</p>
+        <p>Yazılım Bilimi 7</p>
+
+        <button onclick="tikla()">Tıkla </button>
+    </body>
+
+
+</html>
