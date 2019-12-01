@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    <script>
+        function tikla(){
+            var deger=document.forms["form1"]["username"].value;
+            window.alert(deger);
+        }
+    
+    </script>
+    
+    <body>
+        <form name="form1" method="post" action="gonder.php">
+            
+        Kullanici Adi:<input type="text" name="username"/><br>
+        <button onclick="tikla()">Tikla</button>
+        
+        </form>
+    
+
+    </body>
+
+
+</html>

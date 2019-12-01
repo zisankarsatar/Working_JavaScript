@@ -8,10 +8,13 @@
         function degistir(){
             document.getElementById("para").innerHTML="JavaScript";
         }
+        function yukle(){
+            window.alert("Hoşgeldiniz");
+        }
     
     </script>
     <button onclick="degistir()">Tıkla</button>  
-    <body>
+    <body onload="yukle()">
         <p id="para">Çalışıyorum</p>
     
 
