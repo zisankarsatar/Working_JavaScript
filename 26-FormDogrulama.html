@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    <script>
+        function dogrula(){
+            //var deger=document.formisim.isim.value;
+
+            //if(deger==""){
+            //    window.aler("isim alanı boş bırakılamaz.");
+            //    return false;
+            //}
+
+            var deger2=document.getElementById("girdi").value;
+
+            if(isNaN(deger2)==true)//döndürülen deger sayi degilse true doner
+            {
+                    window.alert("input gecersiz");
+            }else{
+                window.alert("input gecerli");
+            }
+            }
+    //required: textin içi boş kaldığında kendi uyarı veriyor
+    </script>
+    
+    <body>
+        <form name="formisim" action="gonder.php" onsubmit=" return dogrula()" method="post">
+            İsim Alani:<input type="text" name="isim" required><br>
+            <input type="submit" value="Gonder">
+        </form>
+        
+
+        <input id="girdi"><br>
+        <button onclick="dogrula()">Kontrol Et</button>
+
+
+    </body>
+
+
+</html>
