@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+           var say=5;
+           var indirme;
+           var sure;
+           function baslat(){
+               indirme=setTimeout(dosyaindirme,5000);
+               suresay();//set intervalin içinde 1 saniye geriden başladığı içn buradad çağırdık.
+               sure=setInterval(suresay,1000);
+           }
+
+           function dosyaindirme(){
+               window.alert("Dosya inmeye başladı...");
+               document.getElementById("para").innerHTML="";
+               
+               say=5;
+           }
+           function suresay(){
+               document.getElementById("para").innerHTML="Dosya "+say+" saniye içinde inicek...";
+               say --;
+
+               if(say==0){
+                   clearInterval(sure);
+               }
+           }
+           function islemleridurdur(){
+               clearInterval(sure);
+               clearTimeout(indirme);
+
+               document.getElementById("para").innerHTML="İndirme işlemi durdu";
+               say=5;
+           }
+        </script>
+    </head>
+    <body>
+        <p>Dosyayı indirmek için tıklayınız.</p>
+        <p id="para"></p>
+
+        <button onclick="baslat()">İndirmek için tıklayınız.</button>
+
+        <button onclick="islemleridurdur()">İşlemi İptal Etmek için tıklayınız.</button>
+        
+    </body>
+
+
+</html>

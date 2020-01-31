@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    </head>
+    
+    <body>
+        <style>
+            div{
+                width: 100px;
+                height: 25px;
+                background-color: cornflowerblue;
+                text-align: center;
+            }
+        </style>
+        <div id="div1">
+            Yazılım Bilimi
+        </div>
+        <div>
+            <img id="resim" src="background-mor4.jpg" width="800px;" height="400px"/>
+        </div>
+
+        <script>
+            var div=document.getElementById("div1");
+            div.onclick=function(){
+                this.innerHTML="Animeee";
+            }
+            var resim=document.getElementById("resim");
+            resim.onmouseover=function(){
+                this.src="background-mor4.jpg" ;   
+            }
+            resim.onmouseout=function(){
+                this.src="anime1.jpg" ;   
+            }
+        </script>
+    </body>
+
+
+</html>

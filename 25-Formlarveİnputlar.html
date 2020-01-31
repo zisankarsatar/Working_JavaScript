@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    <script>
+        function tikla(){
+            //iki farklı ddeger ataması
+            var deger=document.forms["form1"]["username"].value;
+            var sifre=document.form1.sifre.value;
+            window.alert(deger);
+            document.write(sifre);
+
+            if(deger=="" & sifre==""){
+                window.alert("Lufen bos bırakmayın");
+            }
+        }
+    
+    </script>
+    
+    <body>
+        <form name="form1" method="post" action="gonder.php">
+            
+        Kullanici Adi:<input type="text" name="username"/><br>
+        Sifre:<input type="text" name="sifre"/><br>
+    
+        <button onclick="tikla()">Tikla</button>
+
+        
+        </form>
+    
+
+    </body>
+
+
+</html>

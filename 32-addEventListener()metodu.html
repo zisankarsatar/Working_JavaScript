@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <button id="button">Tıkla</button><br>
+
+        <p id="para"></p>
+
+        <script>
+            var button=document.getElementById("button");
+
+            button.addEventListener("click",tikla);
+            button.addEventListener("mouseover",mouseover);
+            button.addEventListener("mouseout",mouseout);
+
+            function tikla(){
+                document.getElementById("para").innerHTML="Tıklandı";
+            };
+            function mouseover(){
+                document.getElementById("para").innerHTML="Mouse Over";
+            };
+            function mouseout(){
+                document.getElementById("para").innerHTML="Mouse Out";
+            };
+        </script>
+        
+    </body>
+
+
+</html>

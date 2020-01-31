@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    
+    <body>
+        <script>
+            function degistir(){
+                document.getElementById("para").style.color="red";
+                document.getElementById("para").style.backroundColor="green";
+                var x = document.getElementById("para");
+                x.style.textAlign="center";//bir çok özelik burdan değiştirilebilir
+                x.style.fontSize="40px";
+                }
+            function kaybet(){
+                var x=document.getElementById("para");
+                x.style.visibility="hidden";
+            }
+            function goster(){
+                var x=document.getElementById("para");
+                x.style.visibility="visible  ";
+            }
+        </script>    
+
+        <p id="para">Yazılım Bilimi</p>
+        <button onclick="degistir()">Degistir</button>
+        <button onclick="kaybet()" >Kaybet</button>
+        <button onclick="goster()" >Goster</button>
+        
+    </body>
+
+
+</html>

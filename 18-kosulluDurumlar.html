@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<script>
+    var saat=7;
+    var haftasonu=true;
+    if(saat <7){
+        window.alert("Vakit erken uyu");
+    }else if(saat==7){
+        
+        window.alert("Uyanma Vakti");
+    }else{
+        if(haftasonu){
+            window.alert("Bugun haftasonu uyuyabilirsin");
+        }else{
+            window.alert("Kalk artık");
+        }
+    }
+
+    if(saat>=7 && haftasonu== false)
+    {
+        document.write("Uyumaa iş var");
+    }
+
+    var işlem=1;
+
+    switch(işlem){
+        case 1:
+            window.alert("islem 1");
+            break;
+
+        case 2:
+        window.alert("islem 2");
+            break;
+
+        case 3:
+        window.alert("islem 3");
+            break;
+
+        default:
+        window.alert("Gecersiz islem");
+            break;
+    }
+</script>
+<body>
+    
+</body>
+</html>

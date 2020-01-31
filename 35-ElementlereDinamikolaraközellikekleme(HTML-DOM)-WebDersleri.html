@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          .blue {
+            color:cornflowerblue;  
+            background-color: yellow;      
+          }
+        </style>
+        <script>
+            function degistir(){
+                var elementler=document.getElementsByTagName("h3");
+                var i=0;
+
+                for(;i<elementler.length;i++){
+                    var ozellik=document.createAttribute("class");
+                    ozellik.value="blue";
+
+                    elementler[i].setAttributeNode(ozellik);
+                }
+
+                var hrefozellik=document.createAttribute("href");
+
+                hrefozellik.value="https://www.youtube.com/watch?v=nzXoCmN7TY0";
+
+                document.getElementById("aetiketi").setAttributeNode(hrefozellik);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="anakisim" style="background-color: #eee;" >
+            <h3>Akıllı Manda</h3>
+            <p>
+                Bir zamanlar küçük bir köyde Edgar adlı bir çiftçi yaşarmış. Edgar küçük bir evde otururmuş ve ufak bir parça arazisi varmış. 
+                Edgar’ın Ödül adında bir mandası varmış. Bu alışılmadık bir isimmiş ama böyle olmasının kendince sebepleri varmış. Çünkü Edgar, 
+                mandasını bulmadan önce çok fakir bir adammış. Ödül, sahibi için çok çalışmış. Tek manda olduğu için sabahtan akşama kadar tarlayı 
+                sürermiş ve bütün işlerde Edgar’a yardım edermiş. Edgar tarlasında her çeşit ürünü yetiştirmeye başlamış. Edgar mahallesinde çok saygı 
+                kazanmış. Elde ettiği verimden ötürü sevgili mandasına Ödül ismini vermiş. Ödül, özel bir mandaymış, akıllıymış ve her zaman hayat doluymuş. 
+                Edgar Ödül’ün özgür ruhlu bir hayvan olduğunu biliyormuş. Ödül işi olmadığı zamanlar sık sık gezmeye gider ve akşam dönermiş. Zaman geçmiş 
+                ve Edgar bir manda daha almış. Edgar ödülü çok seviyormuş ama iş yükünün çok fazla olduğunu ve paylaşılması gerektiğini de fark ediyormuş. 
+                Edgar, hayvanını yormak istemiyormuş. Bir gün tarlayı sürerken Ödül tarlanın ortasında çökmüş ve derin derin nefes almaya başlamış.
+            </p>
+            <h3>Sindirella</h3>
+            <p>
+                Gözlerini kapamış ve ölmüş. Güzel kız, her gün annesinin mezarının yanına gitmiş ve ağlamış. Sindirella’nın babası işi, yüzünden çok 
+                seyahat edermiş. Sindirella’yı düşünüp, ilgileneceği biri olsun diye yeniden evlenmeye karar vermiş. İki genç kızı olan bir dulla evlenmiş. 
+                Sindirella kötü üvey annesi ve iki merhametsiz üvey kız kardeşi ile yaşamış. Sindirella’ya çok kötü davranmışlar. Onların hizmetçisi olarak 
+                ev işlerini yaparak büyümüş. Bir gün Sindirella yerleri siliyormuş. İki kız kardeşi oturmuş aç gözlülükle meyve yiyorlarmış. Yedikten sonra 
+                kız kardeşlerden biri kabuklarını yere fırlatmış. Üvey anne misafir odasına gelmiş ve kirlenmiş yeri görmüş.
+            </p>
+            <a id="aetiketi">Buraya Tıklayın</a>
+        </div>
+        
+
+        <button onclick="degistir()">Değiştir</button>
+        
+        
+      
+    </body>
+
+
+</html>
